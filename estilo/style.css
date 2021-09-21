@@ -1,0 +1,449 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+/**Boot CSS**/
+
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+input {
+	border: 0;
+}
+
+img {
+	width: 100%;
+	max-width: 400px;
+}
+
+.center {
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+
+}
+
+.w33 {
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50 {
+	width: 50%;
+	padding: 0 10px;
+
+}
+
+.left{
+	float: left;
+
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+
+}
+
+/**Estilização**/
+
+header {
+	background: #3D437A;
+	padding: 20px 0;
+}
+
+header .logo {
+	font-size: 23px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.logo a {
+	text-decoration: none;
+	color: white;
+
+}
+
+.mobile {
+	display: none;
+}
+
+nav.desktop ul {
+	list-style-type: none;
+	position: relative;
+	top: 6px;
+}
+
+nav.desktop li {
+	font-weight: 300;
+	font-size: 15px;
+	padding: 0 30px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+nav.desktop a {
+	color: white;
+	text-decoration: none;
+}
+
+nav.desktop a:hover {
+	text-decoration: underline;
+}
+
+section.banner-container {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+.banner-single {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgb(51,51,51,0.7);
+}
+
+section.banner-container form {
+	width: 93%;
+	max-width: 600px; 
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+section.banner-container form h2 {
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-container form input[type=email] {
+	margin-top: 10px;
+	width: 100%;
+	height: 66px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+}
+
+section.banner-container form input[type=submit] {
+	margin-top: 10px;
+	width: 100%;
+	height: 66px;
+	background: #00C59E;
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	border: 0;	
+}
+
+section.descricao-autor {
+	padding: 40px 0;
+}
+
+section.descricao-autor h2 {
+	font-size: 28px;
+	font-weight: 400;
+	color: #444;
+}
+
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+section.especialidades {
+	padding: 40px 0;
+	background: #E2E2E2;
+}
+
+section.especialidades h2.title {
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	color: #999;
+
+}
+
+.box-especialidade {
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.box-especialidade h3 {
+	font-size: 40px;
+	color: #404580;
+
+}
+
+.box-especialidade h4 {
+	font-weight: 300;
+	font-size: 25px;
+	color: #BABABA;
+
+}
+
+.box-especialidade p {
+	margin-top: 10px;
+	color: #444;
+	font-size: 15px;
+}
+
+section.extras {
+	padding: 30px 0;
+	background: #404580;
+}
+
+.servicos-container,.depoimentos-container {
+	padding: 0 50px;
+}
+
+section.extras .title {
+	color: white;
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.depoimento-single {
+	padding: 15px 0;
+	border-bottom: 1px solid #5056A0;
+}
+
+p.depoimento-descricao {
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+
+p.nome-autor {
+	margin-top: 5px;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+.servicos ul {
+	margin: 20px 0;
+	list-style-position: inside;
+}
+
+.servicos li {
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+footer {
+	background: #313462;
+	padding: 30px 0; 
+}
+
+footer.fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p {
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+
+section.erro-404 h2 {
+	text-align: center;
+	color: #444;
+	font-size: 28px;
+	font-weight: 400;
+	border-top: 2px solid #444;
+}
+
+section.erro-404 p {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	color: #444;
+	font-weight: 300;
+}
+
+section.erro-404 a {
+	color: #444;
+}
+
+.wraper-404 {
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	padding: 0 2%;
+	text-align: center;
+	max-width: 1280px;
+	top: 50%;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+.contato-container {
+	padding: 40px 0;
+	text-align: center;
+
+}
+
+.contato-container input[type=text] {
+	width: 100%;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	max-width: 800px;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+}
+
+.contato-container textarea {
+	width: 100%;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	max-width: 800px;
+	height: 120px;
+	padding: 8px;
+	padding-left: 8px;
+	font-size: 16px;
+	resize: vertical;
+	color: #444;
+}
+
+.contato-container input[type=submit] {
+	background: #00C59E;
+	width: 140px;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+.bullets {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+.bullets span {
+	display: inline-block;
+	margin: 0 10px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #444;
+}
+
+.bullets span.active-slider {
+	background: white;
+}
+
+@media screen and (max-width: 768px) {
+
+	img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.w50 {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.w33 {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.box-especialidade {
+		padding: 40px 20px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	nav.desktop {
+		display: none;
+	}
+
+	nav.mobile {
+		display: block;
+	}
+
+	.botao-menu-mobile {
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+
+	}
+
+	nav.mobile ul {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 55px;
+		z-index: 3;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav.mobile li {
+		font-weight: 300;
+		font-size: 15px;
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 17px;
+		padding: 8px;
+	}
+
+	nav.mobile li a {
+		display: block;
+		color: #444;
+		text-decoration: none;
+
+	}
+}
